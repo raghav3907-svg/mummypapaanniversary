@@ -1,0 +1,145 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Happy Marriage Anniversary ❤️</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+
+body{
+    margin:0;
+    font-family:'Segoe UI',sans-serif;
+    text-align:center;
+    color:#100e0e;
+    background-image:url("background.png");
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+}
+
+.container{
+    padding:40px 20px;
+}
+
+h1{
+    font-size:3em;
+    color:#ffffff;
+    margin-bottom:10px;
+    text-shadow:0 0 10px rgba(255,0,0,0.25);
+}
+
+.date{
+    font-size:1.3em;
+    color:#ffffff;
+    margin-bottom:40px;
+}
+
+/* BIG MESSAGE WITH WHITE BOX */
+.big-message{
+    font-size:2.4em;
+    font-weight:bold;
+    color:#b30000;
+    margin:30px auto;
+    max-width:800px;
+    text-shadow:0 0 12px rgba(255,0,0,0.4);
+    animation:fadeIn 2s ease;
+
+    background:rgba(255,255,255,0.75);
+    padding:20px 30px;
+    border-radius:25px;
+    backdrop-filter:blur(6px);
+    border:3px solid #ff4d4d;
+    box-shadow:0 0 25px rgba(255,0,0,0.25);
+}
+
+/* video frame */
+.video-box{
+    width:90%;
+    max-width:800px;
+    margin:30px auto;
+    padding:15px;
+    border-radius:25px;
+    background:rgba(255,255,255,0.6);
+    backdrop-filter:blur(6px);
+    border:3px solid #ff4d4d;
+    box-shadow:0 0 30px rgba(255,0,0,0.25);
+}
+
+.video-box video{
+    width:100%;
+    border-radius:15px;
+}
+
+/* collage gallery */
+.gallery{
+    position:relative;
+    width:90%;
+    max-width:900px;
+    height:600px;
+    margin:60px auto;
+}
+
+.gallery img{
+    position:absolute;
+    width:260px;
+    height:320px;
+    object-fit:cover;
+    border:6px solid white;
+    border-radius:15px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.3);
+    transition:.4s;
+}
+
+.gallery img:hover{
+    transform:scale(1.1) rotate(0deg);
+    z-index:10;
+}
+
+.img1{ top:0; left:50px; transform:rotate(-8deg); }
+.img2{ top:40px; right:40px; transform:rotate(6deg); }
+.img3{ bottom:40px; left:120px; transform:rotate(5deg); }
+.img4{ bottom:0; right:120px; transform:rotate(-7deg); }
+
+@keyframes fadeIn{
+    from{opacity:0; transform:translateY(20px);}
+    to{opacity:1; transform:translateY(0);}
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Happy Marriage Anniversary ❤️</h1>
+<h2 class="date">23 February</h2>
+
+<!-- BIG MESSAGE -->
+<div class="big-message">
+HAPPYYYYY MARRIAGEEEE ANNIVERSARYYY MUMMYYY PAPPAAAAA APKE LIYEE EKK VIDEOOO
+</div>
+
+<!-- VIDEO -->
+<div class="video-box">
+<video controls>
+<source src="video.mp4" type="video/mp4">
+</video>
+</div>
+
+<!-- PHOTOS -->
+<div class="gallery">
+<img src="photo1.jpeg" class="img1">
+<img src="photo2.jpeg" class="img2">
+<img src="photo3.jpeg" class="img3">
+<img src="photo4.jpeg" class="img4">
+</div>
+
+</div>
+
+</body>
+</html>
+```
